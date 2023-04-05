@@ -1,11 +1,3 @@
-const options = {
-	method: 'GET',
-    
-	headers: {
-		'X-RapidAPI-Key': '284edcd0b4msh07d10cef507db90p11682cjsna268e76e21a0',
-		'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
-	}
-};
 
 let element = document.querySelector('.text');
 let author = document.querySelector('.author');
@@ -18,6 +10,15 @@ const dropdown = document.querySelector('.dropdown');
 const searchBox = document.querySelector('.textBox');
 let authorName = document.querySelector('.author-name');
 let authorDetails = document.querySelector('.author-text');
+
+const options = {
+	method: 'GET',
+    
+	headers: {
+		'X-RapidAPI-Key': '284edcd0b4msh07d10cef507db90p11682cjsna268e76e21a0',
+		'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+	}
+};
 
 function show(language){
     searchBox.value = language;
