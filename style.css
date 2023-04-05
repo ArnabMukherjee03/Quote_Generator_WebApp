@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    background: linear-gradient(to right, #ee9ca7, #f3acb5, #f7bdc4, #fbcdd2, #ffdde1);
+}
+.top-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.text{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0px 50px;
+    margin-top: 30px;
+    /* font-family: 'Playfair Display', serif; */
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: auto;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Fasthand', cursive;
+}
+.author{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 50px;
+    font-size: 16px;
+}
+.quotebtn{
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 40px; */
+    /* margin-bottom: 70px; */
+    padding-right: 50px;
+    }
+    .quotebtn p{
+        width: 40%;
+        text-align: center;
+        padding: 14px 12px;
+        background-color: #ee9ca7;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 10px;
+    }
+    .quotebtn.loading{
+        opacity: 0.3;
+    }
+    .lower{
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+    .icons{
+        width: 50%;
+        height: 40px;
+        /* justify-content: center; */
+        gap: 20px;
+        padding-left: 50px;
+    }
+    .icons i{
+        font-size: 18px;
+        color: #000;
+    }
+    .icons a{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 50%;
+        border: 1px solid #ee9ca7;
+    }
+    
+    .language{
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 80px;
+        margin-top: 20px;
+        gap: 8px;
+
+    }
+    .language p{
+        margin-right: 66px;
+        color: #000;
+        font-family: 'Playfair Display', serif;
+    }
+    .dropdown{
+        position: relative;
+        width: 200px;
+    }
+    
+    .dropdown::before{
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 6px;
+        height: 6px;
+        border: 1px solid #333;
+        z-index: 10000;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(-45deg);
+        transition: 0.5s;
+        pointer-events: none;
+    
+    }
+    
+    .dropdown.active::before{
+        top: 10px;
+        transform: rotate(-225deg);
+    }
+    
+    .dropdown input{
+        width: 200px;
+        margin-left: 10px;
+        height: 30px;
+        border: 1px solid #ee9ca7;
+        outline: none;
+        padding-left: 15px;
+        cursor: pointer;
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+    }
+    
+    .dropdown .option{
+        position: absolute;
+        top: 30px;
+        left: 11px;
+        width: 99%;
+        background: #fff;
+        box-shadow: 0 30px 30px rgba(0, 0, 0,0.05);
+        overflow: hidden;
+        display: none;
+        font-family: 'Playfair Display', serif;
+        font-weight: 100;
+        z-index: 100;
+    }
+    .dropdown.active .option{
+        display: block;
+    }
+    .dropdown .option div{
+        padding: 12px 20px;
+        cursor: pointer;
+    }
+    
+    
+    .dropdown .option div:hover{
+        background: #ee9ca7;
+        color: #fff;
+    }
+    
+    .author-section{
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .author-details{
+    
+        border-radius: 10px;
+        margin-top: 40px;
+        width: 70%;
+        height: fit-content;
+        background-color: #fff;
+        /* font-size: 1.3rem; */
+        text-align: center;
+        padding: 0px 50px;
+        padding-bottom: 50px;
+    }
+
+    .author-name{
+        margin-top: 20px;
+        font-size: 40px;
+        font-family: 'Playfair Display', serif;
+    }
+    .author-text{
+        margin-top: 30px;
+
+        font-size: 1.3rem;
+        
+    }
+
+    .footer{
+        height: 30px;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+    }
+
+    @media screen and (max-width:420px){
+
+        .top-section{
+            height: 80vh;
+        }
+
+        .container{
+            width: 95%;
+            margin-top: 60px;
+        }
+
+        .heading{
+            font-size: 35px;
+        }
+
+        .quotebtn{
+            width: 100%;
+            padding-right: 20px;
+        }
+        .quotebtn p{
+            width: 90%;
+        }
+        .text{
+            font-size: 1rem;
+        }
+
+        .language{
+
+            align-items: center;
+            margin-right: 0px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .language p{
+            align-items: flex-start;
+            text-align: left;
+            margin-right: 0px;
+            padding-left: 20px;
+        }
+
+        .icons{
+            gap: 10px;
+            padding-left: 20px;
+        }
+        .icons i{
+            font-size: 14px;
+            
+        }
+
+        .author-section{
+            height: auto;
+            margin-top: 50px;
+            /* margin-bottom: 30px; */
+        }
+
+        .author-details{
+            margin-top: 10px;
+            width: 90%;
+            
+        }
+
+        .author-name{
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+        }
+        .author-text{
+            margin-top: 30px;
+    
+            font-size: 0.7rem;
+            
+        }
+
+        .footer{
+            font-size: 16px;
+        }
+
+        
+    
+    }
