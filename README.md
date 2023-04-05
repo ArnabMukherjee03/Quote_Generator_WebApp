@@ -12,7 +12,7 @@ Quote Genarator app display random quotes and also show the author's details.
 - you can hear the quotes
 - Author details
 
-<hr>
+## Screen Shots -
 
 
 ![Logo](Public/Images/Screenshot%20(114).png)
