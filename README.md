@@ -15,6 +15,6 @@ Quote Genarator app display random quotes and also show the author's details.
 ## Screen Shots -
 
 
-![Logo](Public/Images/Screenshot%20(114).png)
-![Logo](Public/Images/Screenshot%20(115).png)
+![Logo](Public/Images/Screenshot%20(122).png)
+![Logo](Public/Images/Screenshot%20(123).png)
 
